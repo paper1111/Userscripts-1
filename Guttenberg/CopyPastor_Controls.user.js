@@ -7,8 +7,8 @@
 // @grant       none
 // ==/UserScript==
 
-var buttonSpan = document.createElement ('span');
-buttonSpan.innerHTML   = '<span id="controls"> <a>k</a> <a>f</a> </span>';
+var buttonSpan = document.createElement('span');
+buttonSpan.innerHTML   = '<span id="controls"> <a style=" + kCss + ">k</a> <a>f</a> </span>';
 
 var containers = document.getElementsByClassName("container");
 Array.from(containers).forEach(function(container) {
