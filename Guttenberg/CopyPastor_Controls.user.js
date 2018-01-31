@@ -3,7 +3,7 @@
 // @namespace   paper1111
 // @description Adds [k] [f] buttons to CopyPastor
 // @include     http://copypastor.sobotics.org/posts/*
-// @version     0.9
+// @version     0.10
 // @grant       none
 // ==/UserScript==
 
@@ -23,7 +23,7 @@ Array.from(containers).forEach(function(container) {
                     if (link.textContent === "Possible Plagiarism") {
                         console.log("match");
                         // insert text
-                        title += buttonSpan;
+                        title.appendChild(buttonSpan)
                     }
                 });
             });
