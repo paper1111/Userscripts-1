@@ -3,7 +3,7 @@
 // @namespace   paper1111
 // @description Adds [k] [f] buttons to CopyPastor
 // @include     http://copypastor.sobotics.org/posts/*
-// @version     0.6
+// @version     0.7
 // @grant       none
 // ==/UserScript==
 
@@ -11,15 +11,15 @@ var buttonSpan = document.createElement ('span');
 buttonSpan.innerHTML   = '<span id="controls"> <a>k</a> <a>f</a> </span>';
 
 var containers = document.getElementsByClassName("container");
-[].forEach.call(containers, function(container) {
+Array.from(containers).forEach(function(container) {
     var rows = container.getElementsByClassName("row");
-    [].forEach.call(rows, function(row) {
+    Array.from(rows).forEach(function(row) {
         var cols = row.getElementsByClassName("col");
-        [].forEach.call(cols, function(col) {
+        Array.from(cols).forEach(function(col) {
             var titles = col.getElementsByTagName("h2")
-            [].forEach.call(titles, function(title) {
+            Array.from(titles).forEach(function(title) {
                 var links = col.getElementsByTagName("a")
-                [].forEach.call(links, function(link) {
+                Array.from(links).forEach(function(link) {
                     if (link.textContent === "Possible Plagiarism") {
                         console.log("match");
                         // insert text
