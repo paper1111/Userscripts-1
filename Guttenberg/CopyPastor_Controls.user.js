@@ -2,7 +2,7 @@
 // @name        CopyPastor Controls
 // @namespace   paper1111
 // @description Adds [k] [f] buttons to CopyPastor
-// @match       *://http://copypastor.sobotics.org/posts/*
+// @include     http://copypastor.sobotics.org/posts/*
 // @version     0.1.1
 // @grant       none
 // ==/UserScript==
