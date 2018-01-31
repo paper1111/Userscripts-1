@@ -3,7 +3,7 @@
 // @namespace   paper1111
 // @description Adds [k] [f] buttons to CopyPastor
 // @include     http://copypastor.sobotics.org/posts/*
-// @version     0.10
+// @version     0.11
 // @grant       none
 // ==/UserScript==
 
