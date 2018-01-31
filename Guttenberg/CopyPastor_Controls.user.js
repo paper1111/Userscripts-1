@@ -3,7 +3,7 @@
 // @namespace   paper1111
 // @description Adds [k] [f] buttons to CopyPastor
 // @include     http://copypastor.sobotics.org/posts/*
-// @version     0.2
+// @version     0.3
 // @grant       none
 // ==/UserScript==
 
@@ -26,6 +26,7 @@ containers.forEach( function(container) {
                 var links = col.getElementsByTagName("a")
                 links.forEach( function(link) {
                     if (link.textContent === "Possible Plagiarism") {
+                        console.log("match");
                         titles += buttonSpan;
                     }
                 });
